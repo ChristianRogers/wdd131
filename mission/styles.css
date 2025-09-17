@@ -1,0 +1,48 @@
+body {
+    font-family: Palatino Linotype, Palatino, 'Times New Roman', Times, serif;
+    max-width: 650px;
+    margin: auto;
+    font-size: 12pt;
+}
+
+#content {
+    margin: auto;
+    padding: 60px;
+    
+}
+#header {
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#byui {
+    font-size: 1em;
+    margin-bottom: 3px;
+    color: #006EB6;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+}
+
+#header hr {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+#list_start {
+    font-style: italic;
+}
+
+.list_item {
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 100px;
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+}
