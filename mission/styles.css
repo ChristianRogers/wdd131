@@ -10,7 +10,7 @@ body {
     padding: 60px;
     
 }
-#header {
+#mission-header {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ body {
     margin-bottom: 0;
 }
 
-#byui {
+#byui-name {
     font-size: 1em;
     margin-bottom: 3px;
     color: #006EB6;
@@ -27,7 +27,7 @@ body {
     letter-spacing: 2.5px;
 }
 
-#header hr {
+#mission-header hr {
     margin-top: 0;
     margin-bottom: 35px;
 }
