@@ -37,3 +37,9 @@ selectElem.addEventListener('change', function(){
     document.getElementById(codeValue).style.color = 'red';
 })
                 
+
+const image = document.querySelector('img');
+image.setAttribute("src", "images/triangle.svg");
+image.setAttribute("alt", "A triangle");
+
+document.body.className = "blue";
