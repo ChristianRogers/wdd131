@@ -98,7 +98,12 @@ dialog {
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
   }
-  .close-viewer {
+
+  header nav a {
+    display: inline;
+  }
+
+  nav a .close-viewer {
     top: 22vh;
     right: 6vh;
   }
@@ -115,9 +120,5 @@ dialog {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 70px;
     margin-top: 10px;
-  }
-
-  header nav a {
-    display: inline;
   }
 }
