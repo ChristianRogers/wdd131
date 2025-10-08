@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="A collection of really cool pictures">
-    <meta name="author" content="Christian Rogers">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="A collection of really cool pictures" />
+    <meta name="author" content="Christian Rogers" />
+    <script src="script.js" defer></script>
     <title>Cool Pics</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Cool Pics 📷</h1>
-        <button class="menu">
-            <p>Menu</p>
-        </button>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">People</a>
-            <a href="#">Places</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
+      <h1>Cool Pics 📷</h1>
+      <button class="menu">
+        <p>Menu</p>
+      </button>
+      <nav class="hide">
+        <a href="#">Home</a>
+        <a href="#">People</a>
+        <a href="#">Places</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
     <main>
-        <h1>Current Work</h1>
-        <section id="photo-grid">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-            <img src=norris-sm.jpg alt="Great Photo" class="images">
-        </section>
+      <h1>Current Work</h1>
+      <section class="photo-grid">
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+        <img src="norris-sm.jpg" alt="Great Photo" class="images" />
+      </section>
+
+      <dialog>
+        <img id="modal-image" />
+        <button class="close-viewer">X</button>
+      </dialog>
     </main>
     <footer>&copy;2025 Christian Rogers</footer>
-</body>
+  </body>
 </html>
