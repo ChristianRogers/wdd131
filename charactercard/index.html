@@ -12,29 +12,23 @@
       property="og:url"
       content="https://christianrogers.github.io/wdd131/charactercard/"
     />
-    <meta
-      property="og:image"
-      content="https://yourURLofSocialPreviewImageHere.png"
-    />
+    <meta property="og:image" content="snortleblat.webp" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Character Card" />
     <meta name="twitter:description" content="A character card with stats" />
-    <meta
-      name="twitter:image"
-      content="https://yourURLofSocialPreviewImageHere.png"
-    />
+    <meta name="twitter:image" content="snortleblat.webp" />
 
     <!-- One favicon (ICO works everywhere) -->
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="snortleblat.ico" />
 
     <!-- One Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/images/snortleblat.webp" />
 
     <title>Character card</title>
     <meta name="author" content="Christian Rogers" />
-    <meta name="description" content="A simple character card." />
+    <meta name="description" content="A character card for Snortleblat." />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -47,11 +41,17 @@
   </head>
   <body>
     <div class="card">
-      <div class="image"></div>
-      <div class="name"></div>
-      <div class="stats"></div>
-      <div class="buttons"></div>
-      <button>Click Me</button>
+      <img src="#" alt="Character Image" class="image" />
+      <p class="name"></p>
+      <div class="stats">
+        <p id="class"></p>
+        <p id="level"></p>
+        <p id="health"></p>
+      </div>
+      <div class="buttons">
+        <button id="attack-button">Attack</button>
+        <button id="level-up-button">Level Up</button>
+      </div>
     </div>
   </body>
 </html>
