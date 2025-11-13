@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -43,7 +49,7 @@ header {
   height: 30px;
   margin-left: 10px;
   padding: 3px;
-  border-left: 2px solid #000000;
+  border-left: 1px solid #8b8b8b;
 }
 
 #search-bar input[type="text"] {
@@ -62,10 +68,76 @@ header hr {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
-
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  justify-content: center;
+  padding: 20px;
   border: 3px solid #000000;
   border-radius: 10px;
+}
+
+.recipe img {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.recipe button {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.recipe h2 {
+  color: rgb(31, 145, 215);
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 639px) {
+  body,
+  header,
+  .recipe {
+    max-width: 1000px;
+  }
+
+  header hr {
+    max-width: 980px;
+    margin: 20px auto;
+  }
+
+  .recipe {
+    flex-direction: row;
+  }
+
+  .recipe img {
+    flex: 0 1 auto;
+    max-width: 500px;
+    margin-right: 20px;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
