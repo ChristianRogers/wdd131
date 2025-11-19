@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css" />
     <meta name="author" content="Christian Rogers" />
     <meta name="description" content="Recipe page for WDD 131" />
+    <script src="script.js" defer></script>
     <title>Recipes</title>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -53,34 +54,15 @@
       <div id="search-bar">
         <input
           type="text"
+          id="search-input"
           placeholder="Find a Recipe"
           aria-label="Search recipes"
         />
-        <img src="images/search.svg" alt="Search" />
+        <img src="images/search.svg" id="search-icon" alt="Search" />
       </div>
       <hr />
     </header>
-    <main>
-      <section class="recipe">
-        <img src="images/apple-crisp.jpg" alt="apple-crisp" />
-
-        <div>
-          <button>dessert</button>
-          <h2>Apple Crisp</h2>
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
-          <p class="hidden">
-            This apple crisp recipe is a simple yet delicious fall dessert
-            that's great served warm with vanilla ice cream.
-          </p>
-        </div>
-      </section>
-    </main>
+    <main></main>
     <footer>
       <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons"
         >Recipe icons created by Freepik - Flaticon</a
