@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+:root {
+  --primary-color: #a4303f;
+  --secondary-color: #d87e3e;
+  --accent1-color: #f2d0a4;
+  --accent2-color: #ffeccc;
+
+  --heading-font: "Courgette", cursive, serif;
+  --paragraph-font: "Palatino Linotype", times, serif;
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--primary-color);
+}
