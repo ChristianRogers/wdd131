@@ -19,3 +19,60 @@
   --nav-hover-link-color: var(--accent2-color);
   --nav-hover-background-color: var(--primary-color);
 }
+
+header {
+  background-color: var(--nav-background-color);
+  padding: 10px 0;
+}
+
+h1 {
+  color: var(--headline-color-on-color);
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+}
+
+header img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.reviews-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
