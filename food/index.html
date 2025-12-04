@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
     <title>Christian's Food Review</title>
   </head>
 
@@ -25,13 +25,17 @@
       <h1>Christian's Food Review</h1>
       <nav>
         <a href="index.html">McDonalds</a>
-        <img src="images/logo.webp" alt="Logo image" class="logo" />
+        <img
+          src="images/logo.webp"
+          alt="Christian's Food Review logo"
+          class="logo"
+        />
         <a href="bk.html">Burger King</a>
       </nav>
     </header>
     <main>
       <section class="reviews-section">
-        <h2>Top 5 Food at McDonalds</h2>
+        <h2 class="review-title">Top 5 Food at McDonalds</h2>
         <div class="buttons-container">
           <button id="all-btn" class="filter-btn">All</button>
           <button id="breakfast-btn" class="filter-btn">Breakfast</button>

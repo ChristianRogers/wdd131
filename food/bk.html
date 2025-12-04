@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js" type="module"></script>
     <title>Christian's Food Review</title>
   </head>
 
@@ -31,18 +31,20 @@
     </header>
     <main>
       <section class="reviews-section">
-        <h2>Top 5 Food at Burger King</h2>
+        <h2 class="review-title">Top 5 Food at Burger King</h2>
         <div class="buttons-container">
           <button id="all-btn" class="filter-btn">All</button>
           <button id="breakfast-btn" class="filter-btn">Breakfast</button>
           <button id="lunch-btn" class="filter-btn">Lunch</button>
         </div>
         <div class="reviews-container">
-          <!-- Reviews will be dynamically inserted here -->
-        </div>
-        <div class="nav_buttons">
-          <button id="prev-btn" class="nav-btn">Previous</button>
-          <button id="next-btn" class="nav-btn">Next</button>
+          <div class="review-card">
+            <!-- Review content will be dynamically inserted here -->
+          </div>
+          <div class="nav-buttons">
+            <button id="prev-btn" class="nav-btn">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+          </div>
         </div>
       </section>
     </main>
