@@ -2,9 +2,9 @@
 
 :root {
   --primary-color: #a4303f;
-  --secondary-color: #bf5d17;
-  --accent1-color: #f2d0a4;
-  --accent2-color: #ffeccc;
+  --secondary-color: #903e05;
+  --accent2-color: #f2d0a4;
+  --accent1-color: #ffffff;
 
   --heading-font: "Courgette", cursive, serif;
   --paragraph-font: "Palatino Linotype", times, serif;
@@ -23,6 +23,20 @@
 header {
   background-color: var(--nav-background-color);
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: none;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 h1,
@@ -39,12 +53,13 @@ h2 {
 nav {
   background-color: var(--nav-background-color);
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: space-evenly;
 }
 
 nav a {
-  color: var(--nav-link-color);
+  color: var(--headline-color-on-color);
   text-decoration: none;
   font-size: 1.2rem;
   padding: 10px 15px;
@@ -53,21 +68,26 @@ nav a:hover {
   color: var(--nav-hover-link-color);
 }
 
-header img {
-  height: 60px;
-  width: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
+body {
+  background-color: var(--accent2-color);
 }
 
 button {
   background-color: var(--secondary-color);
-  color: var(--accent2-color);
+  color: var(--accent1-color);
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 30px 40px;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--accent1-color);
+  cursor: pointer;
 }
 
 .buttons-container {
@@ -93,11 +113,11 @@ button {
 
 .review-card {
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: var(--accent1-color);
   font-family: var(--paragraph-font);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  max-width: 550px;
   width: 85%;
   padding: 15px;
 }
@@ -106,8 +126,6 @@ button {
   border-radius: 10px;
   display: block;
   margin: 0 auto 10px auto;
-  max-width: 100%;
-  height: auto;
 }
 
 .nav-buttons {
@@ -129,4 +147,11 @@ footer {
 footer a {
   color: var(--nav-link-color);
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
 }

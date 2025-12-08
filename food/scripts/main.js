@@ -19,7 +19,7 @@ function displayMcdReviews(menuType) {
   const topFive = mcdItems.slice(0, 5);
   let reviewsHTML = topFive.map((item) => {
     return `<div class="review-card">
-      <img src="${item.image}" alt="${item.name}" class="review-image"/>
+      <img src="${item.image}" alt="${item.name}" class="review-image" height="300" width="300"/>
       <h3 class="review-name">${item.name}</h3>
       <p class="review-text">${item.review}</p>
       <p class="review-rating">Rating: ${item.rating}/10</p>
@@ -116,3 +116,11 @@ if (prevBtn && nextBtn) {
 if (reviewTitle.textContent.includes("Burger King")) {
   displayBKCarousel();
 }
+
+//mobile nav toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("hidden");
+});
