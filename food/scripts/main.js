@@ -20,9 +20,11 @@ function displayMcdReviews(menuType) {
   let reviewsHTML = topFive.map((item) => {
     return `<div class="review-card">
       <img src="${item.image}" alt="${item.name}" class="review-image" height="300" width="300"/>
-      <h3 class="review-name">${item.name}</h3>
-      <p class="review-text">${item.review}</p>
-      <p class="review-rating">Rating: ${item.rating}/10</p>
+      <div>
+        <h3 class="review-name">${item.name}</h3>
+        <p class="review-text">${item.review}</p>
+        <p class="review-rating">Rating: ${item.rating}/10</p>
+      </div>
     </div>`;
   });
   reviews.innerHTML = reviewsHTML.join("");
@@ -50,10 +52,12 @@ function displayBKCarousel(menuType) {
   currentBkItems.sort((a, b) => b.rating - a.rating);
   let reviewCarousel = document.querySelector(".review-card");
   let item = currentBkItems[currentBKIndex];
-  reviewCarousel.innerHTML = `<img src="${item.image}" alt="${item.name}" class="review-image"/>
+  reviewCarousel.innerHTML = `<img src="${item.image}" alt="${item.name}" class="review-image" height="auto" width="312"/>
+    <div>
     <h3 class="review-name">${item.name}</h3>
     <p class="review-text">${item.review}</p>
-    <p class="review-rating">Rating: ${item.rating}/10</p>`;
+    <p class="review-rating">Rating: ${item.rating}/10</p>
+    </div>`;
 }
 
 let breakfastBtn = document.getElementById("breakfast-btn");
